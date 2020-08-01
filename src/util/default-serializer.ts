@@ -1,4 +1,11 @@
 export class DefaultSerializer {
+	/**
+	 * Is support serializer.
+	 *
+	 * @param  {any}     x
+	 *
+	 * @return {boolean}
+	 */
 	static isSupportSerializer(x: any): boolean {
 		return x instanceof Object || x instanceof Array;
 	}

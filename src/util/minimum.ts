@@ -4,6 +4,5 @@ export function Minimum(originalPromise: any, delay: number): Promise<any> {
 		new Promise(resolve => {
 			setTimeout(() => resolve(), delay)
 		}),
-
 	]).then(result => result[0])
 }
